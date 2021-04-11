@@ -1,0 +1,54 @@
+
+Redirection allows us to control the Flow of Data Stream
+
+To redirect the Standard Output (Name of the Stream where the Output Goes...
+								Not the destination but the Pipe/Stream )
+from Terminal to SomeWhere Else
+
+Every Stream has a Number associated with it 
+Following are the Data Streams
+
+-> Standard Input is 0
+-> Standard Output is 1
+-> Standard Error is 2
+
+By Default all of them point to(End at) Terminal
+
+
+(Here we are changing the destination 
+of stream number 1)
+
+
+Note always use >>  so that the Data is Appended
+			if	>  used then it will overwrite the data
+
+
+1) StandardInput
+	
+	cat < input.txt
+
+	Note that we can use input from one file and Output it to Other
+	eg: cat < input.txt  >> hello.txt
+
+
+2) StandardOutput
+
+	cat 1> output.txt  (Here the number 1 is optional)
+
+	Note that cat first truncates all the data if the file is already present
+	and then it writes to it
+	Inorder to APPEND to the Previous content use >>
+
+	cat >> output.txt	(for Appending)
+
+
+3) StandardError
+
+	cat -k sdjfk  2>> error.txt
+
+	(Here 2 is Mandatory)
+	(Redirecting the standardError stream from terminal to error.txt )
+
+
+NOTE : Both StandardOutput and StandardError can be used at the SAME TIME
+

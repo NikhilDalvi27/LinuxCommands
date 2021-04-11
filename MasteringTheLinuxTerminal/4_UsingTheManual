@@ -1,0 +1,45 @@
+1) Command to Search the Manual
+	
+	man   					-k   					which
+(CommandName)	  		 (Options)				   (Input)
+(to Search Manual)		(For Searching)			 (SearchTerm)
+
+
+2) Command to read the Manual
+
+   	man 				1							which
+ (CommandName)		(SectionNumber)				(Command which we need to read about)
+
+
+3)	DESCRIPTION section which comes after running the man Command
+  	is the most Important Section-- which tells the details about the command
+
+4) IMP-> SYNOPSIS section a) tells how to actually USE the command
+  		  				  b) Here if the Options are within the [] 
+  		     				 then the Options are Optional
+  		  				  c) If there are ... it indicates that the
+  		  				     command can take any number of Arguments
+
+
+5)Anything inside the < > brackets is MANDATORY
+
+6)If there's a |  operator mentioned in the list of Options
+  Then we can have either of the Operator and not both
+  
+  eg: which [-a | -f]     (This indicates we can have EITHER a option or the f option
+  							and not both of them)
+
+
+7)For Exploring New UNKNOWN command
+	
+  eg: man -k "list directory contents"
+
+  The commands of our use will lie in the 1st section itself (User Related Commands)
+  		
+
+8) help is an ALTERNATIVE to man command
+   
+   eg: man cd  ---> won't work , instead do
+       help cd 
+
+

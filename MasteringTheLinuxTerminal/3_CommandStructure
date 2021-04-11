@@ -1,0 +1,48 @@
+	-All commands are some computer programs that are installed on the computer
+
+	1)Command or (ProgramName) that you have to use 
+	  is always the first part of the command
+
+	VERY IMP- Command Structure
+
+     -> COMMANDNAME -OPTIONS INPUTS
+
+
+     	a)Commands operate on inputs
+     	b)Options modify a Commands behaviour
+
+       (Same Command can be customized using different Options and different Inputs )
+       (Inputs are also called Operand...Some commands require Inputs, Some Don't)
+       (There can be one or more Inputs --Operands)
+       eg: cal
+       	   cal 2021
+       	   cal 12 2021
+
+       	   date
+       	   date -u
+       	   date --universal	(Same as above)
+
+       	   NOTE:- Long Names are proceeded by 2 dashes 
+       	    	  and Usually follow Pascal Case(Seperated by dash)
+       	   		  and short Names are proceeded by 1 dash
+
+       	  
+       	   IMP For supplying different options u can do either of the following
+       	   1)date -a -b -c -d -e (NOTE : here the Order does not matter)
+       	   2)date -abcde	(NOTE : This type of chaining is not possible with LongForms)
+       	   
+
+    
+    2)Some Commands allow = sign to match the Options with the corresponding Inputs
+     
+       -> COMMANDNAME  -OPTIONS=INPUTS
+
+
+
+    3)To print the path in which the commands lies, this is just to ensure if the 
+     command lies on the shell path
+
+    -> which commandName
+
+
+

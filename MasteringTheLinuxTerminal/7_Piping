@@ -1,0 +1,67 @@
+
+Piping -> It's about connecting the standard output of one command
+		  to the standard input of another command
+
+-> Redirection of STDOUT breaks pipeline
+-> To Save Data without breaking pipeline, use TEE command
+-> If Command doesn't accept STDIN, but u want to pipe it, use XARGS
+-> Commands that we use with XARGS can still have their	own argument
+
+
+
+
+
+eg: date | cut --delimiter " " --fields=1  > today.txt
+	
+	Here the output of date command is given as an input to the cut command
+	Using the | (pipe operator)
+
+
+
+
+
+IMP NOTE -> Once you do redirection you cannot do anymore piping		  
+			When you want to continue piping after redirection
+			Use the TEE command
+
+
+			date |  tee fulldate.txt 			| cut --delimiter " " --fields=1 			
+
+					(Note we took 						Here the piping continues
+					SnapShot and continue
+					doing piping)
+					Since we are redirecting
+					Stream to fulldate.txt
+
+
+		Data Flow  -  - - >			
+					  |	
+					  V
+IMP
+
+1) Tee Command --(Basically used for Saving Data in Between the Pipeline)
+
+
+	We redirect the Output Of previous command into 2 Data Streams
+
+	eg: date | tee fulldate.txt | cut --delimiter " " --fields 1> today.txt
+
+	(The tee command will only operate on the Output Data which is 
+	 preceeding it eg: date command    and not the one which is behind it)
+
+
+2) XARGS Command --(Piping connects Standard Output of one command to Standard Input of Other
+					But Some command do not accept the Standard Input but Command Line Args, 
+					So XARGS converts the Standard Input to Command Line Args)
+
+
+		eg: date | echo		-- This thing doesn't work
+								Since echo doesn't accept Standard Input but only Command Line Arguments
+
+
+		a) date | xargs echo "hello"   -- This thing works					
+
+		b) cat filestodelete.txt | xargs rm
+
+
+

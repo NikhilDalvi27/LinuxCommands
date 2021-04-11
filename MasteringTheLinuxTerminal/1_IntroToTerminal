@@ -1,0 +1,25 @@
+Shortcut to Open the Terminal
+- ctrl+Alt+T
+
+To Close Terminal
+- ctrl+D
+
+
+To Clear the terminal
+- ctrl +L
+
+
+To Show History of Commands
+-history
+ after getting the history u can rerun the command
+ using   !(command_Number)
+
+To Clear History
+-history -c
+
+IMP
+NOTE:- Everything in Linux is Case Sensitive 
+	   (includes the Commands, Options and Inputs)
+	   -b  will lead to one option &
+	   -B  will lead to Other option
+	   
