@@ -1,0 +1,16 @@
+1)Everything in Linux is treated as a File
+2)Entire Linux File System follows a Tree Structure
+   Directory means Folder
+
+   root directory(/) is the parent directory of all the folders
+   Under Root Directory we have Multiple directories... one among them is the Home directory
+   Home Directory has directory for each of the users on the system
+
+   In the Tree Structure
+   -Everything below a particular user is specific to that user
+   -Everything above it is specific to the System
+   -Hence System related files require special permission/ privileges...
+    these files are only accessible to the root user
+
+
+    Download the Cheat Sheet ---> Lecture Number 19

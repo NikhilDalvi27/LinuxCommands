@@ -1,0 +1,43 @@
+
+1) ~ Means CURRENT USERS home directory
+   root directory(/) is the parent directory of all the folders
+
+2) pwd stands for print working directory
+        tells the folder our shell is currently operating in
+3) Note ls does not accept standard input while piping
+        it needs the xargs command to convert standard input to command Line arguments
+
+4) ls will list out the folders in current directory
+        here BLUE indicates Folders and Folder Names end with /
+        WHITE indicates Files
+5) ls - F
+       It classifies everything into Files or Folders
+
+6) ls -l
+        This puts everything in long form format
+
+   ls -a
+        Will list out all the files...also the hidden ones
+        in the current directory
+
+        In this (.) Folder refers to the current directory
+        and (..) Folder refers to the parent
+
+7) cd  FolderName
+        This changes the current Directory
+
+        eg:
+            This is absolute path -- both do the same thing
+             cd /home/nikhil/Downloads  NOTE here the entire path is specified at once and not stepwise
+             cd ~/Downloads
+
+             This is relative path
+             cd Downloads
+
+             cd .. will take you to the parent of the current directory
+
+
+    Note only typing cd without any inputs takes you to the current user's homeDirectory
+
+
+
