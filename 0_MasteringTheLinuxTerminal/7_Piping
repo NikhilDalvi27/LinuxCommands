@@ -1,6 +1,15 @@
+Note -> Redirection is processed before piping,
+        so once you do re-direction you cannot do piping
+
 
 Piping -> It's about connecting the standard output of one command
 		  to the standard input of another command
+
+For the Commands that don't even accept standard input
+so as to be used in piping
+so XARGS command is used to convert the Standard Input into Command Line Argument
+eg: date | xargs echo
+
 
 -> Redirection of STDOUT breaks pipeline
 -> To Save Data without breaking pipeline, use TEE command
@@ -33,10 +42,9 @@ IMP NOTE -> Once you do redirection you cannot do anymore piping
 					Since we are redirecting
 					Stream to fulldate.txt
 
-
-		Data Flow  -  - - >			
-					  |	
-					  V
+Data Flow (Tee Command)  -  - - >
+					        |
+					        V
 IMP
 
 1) Tee Command --(Basically used for Saving Data in Between the Pipeline)

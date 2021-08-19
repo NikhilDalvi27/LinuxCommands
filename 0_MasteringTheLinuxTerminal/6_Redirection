@@ -1,9 +1,13 @@
 
 Redirection allows us to control the Flow of Data Stream
+in other words where the Data Stream(pipe) points(ends)
 
 To redirect the Standard Output (Name of the Stream where the Output Goes...
 								Not the destination but the Pipe/Stream )
 from Terminal to SomeWhere Else
+
+
+
 
 Every Stream has a Number associated with it 
 Following are the Data Streams
@@ -21,6 +25,9 @@ of stream number 1)
 
 Note always use >>  so that the Data is Appended
 			if	>  used then it will overwrite the data
+
+we can use both at a time
+cat 1>> output.txt 2>>  error.txt
 
 
 1) StandardInput

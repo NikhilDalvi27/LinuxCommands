@@ -1,0 +1,20 @@
+All the Bash Script have    .sh  as the file extension
+
+
+1)  To tell the interpreter to interpret the file as Code and not a Normal file
+    to do that the first line in the file needs to be
+    #!/{path_to_interpreter}
+
+2) To run the bash script just type
+    bash fileName.sh
+
+
+3)To avoid specifying the path to bash script.... While calling the bashScript
+    -For that in the home folder....make a directory called bin  (mkdir bin)
+    -Move the bash script into the bin folder (mv ~/Desktop/bashScriptName.sh  ~/bin/)
+    - To make bash script run from cmd
+      Add executable permissions to bash script (cd into bin and    chmod +x bashScriptName.sh )
+    - Add to the shell's search path, the recently created bin folder
+    -Edit the .bashrc file in the home directory
+        PATH="$PATH:$HOME/bin"
+     -Just call the bashScript Name on any path in the terminal, the script will run

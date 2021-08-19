@@ -1,7 +1,8 @@
 1)Commands - are the Words
 			(They are case sensitive)
 
-2)Shell - it's the language to interpret the Commands
+2)Shell - It's a computer program that interprets the meaning of the commands
+        - it's the language to interpret the Commands
 		to figureOut a meaning from those Commands (eg: French, English)
 		-So different shell can interpret diff meaning for same Commands
 		-Most commonly used shell is the BASH shell

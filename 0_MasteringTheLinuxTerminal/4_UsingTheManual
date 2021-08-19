@@ -16,12 +16,13 @@
 
 4) IMP-> SYNOPSIS section a) tells how to actually USE the command
   		  				  b) Here if the Options are within the [] 
-  		     				 then the Options are Optional
-  		  				  c) If there are ... it indicates that the
+  		     				 then the Option is Optional
+  		     			  c) Here if the Options are within the <>
+  		     			     then the Option is Mandatory
+  		     			  e) If there are ... it indicates that the
   		  				     command can take any number of Arguments
 
 
-5)Anything inside the < > brackets is MANDATORY
 
 6)If there's a |  operator mentioned in the list of Options
   Then we can have either of the Operator and not both

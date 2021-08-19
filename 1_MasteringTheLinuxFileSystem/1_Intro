@@ -4,7 +4,7 @@
 
    root directory(/) is the parent directory of all the folders
    Under Root Directory we have Multiple directories... one among them is the Home directory
-   Home Directory has directory for each of the users on the system
+   Home Directory (home) has directory for each of the users on the system
 
    In the Tree Structure
    -Everything below a particular user is specific to that user
@@ -12,5 +12,8 @@
    -Hence System related files require special permission/ privileges...
     these files are only accessible to the root user
 
+
+    Root user has absolute power of the System
+    (/root) is the home directory for the Root User
 
     Download the Cheat Sheet ---> Lecture Number 19

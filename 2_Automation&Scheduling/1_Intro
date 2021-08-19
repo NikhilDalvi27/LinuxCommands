@@ -1,0 +1,10 @@
+Bash Script is a text file that has list of commands that are supposed to be executed
+one after the other but executing all of them
+Rather than we executing one command at a time
+
+
+We can schedule these bash script to run everyday at a particular time
+using something called as Crown
+
+
+Both this help us in Automation

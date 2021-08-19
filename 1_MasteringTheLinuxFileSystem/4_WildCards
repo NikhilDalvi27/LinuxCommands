@@ -1,0 +1,6 @@
+Used for creating Regular Expression
+
+*   matches everything
+?   matches only one character
+[1,a,b]  matches only one character from the options mentioned inside the [] brackets
+[0-9]  matches only one character from 0 to 9

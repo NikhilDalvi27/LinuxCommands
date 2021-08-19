@@ -1,0 +1,84 @@
+Archive meaning
+-transfer (data) to a less frequently used storage medium such as magnetic tape.
+
+Tar ball like a Container where we put the files
+so that it's easy for us to compress those files...by compressing the tar ball using compression algorithm
+
+1) Make a tarball   (Just a container to store files)
+2) Compress the tarball using compression algorithm
+
+
+Tar command
+
+1) to create a tarball
+
+tar -cvf    newArchiveName.tar  file[1-3].txt
+                    |                   |
+            (new Archive Name)  (what files are to
+                                  be compressed)
+
+    c option-- create a new archive
+    v option--  verbose meaning, report what is done
+    f  option-- accept files
+
+
+1.1)IMP to create a tarball and compress at the same time
+
+tar -cvzf    newArchiveName.tar.gz  file[1-3].txt
+
+
+
+
+2)to look what's inside the tarball
+
+tar -tf  newArchiveName.tar
+
+    t option -- test label, let u check what's inside the tar file
+
+
+3) to extract the files from tarball
+
+tar -xvf  newArchiveName.tar
+
+    x option-- extract the file
+
+ (Note even after extracting the tar ball is still valid)
+
+
+3.1)IMP  to extract directly from Compressed
+
+tar -xvzf  newArchiveName.tar.gz
+
+
+
+
+
+ COMPRESSION
+
+2 Algorithms
+
+gzip -- faster but less compression power(doesn't reduce the size significantly)
+bzip2 -- slower but more compression power
+
+
+1) To Compress
+eg  gzip newArchiveName.tar
+
+
+2)To UnCompress (reverse compression)
+eg   gunzip newArchiveName.tar.gz
+
+
+
+Creating Zip files
+
+1) zip command
+
+zip  zipFolderName.zip file1.txt file2.txt file3.txt
+
+2) unzip command
+
+unzip   zipFolderName.zip
+
+
+

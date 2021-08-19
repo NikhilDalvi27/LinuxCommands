@@ -1,0 +1,30 @@
+Link the commands to create a COMMAND PIPELINE
+using DataStream we can do Piping and Redirection
+
+1)  2 ways to get data into a Command
+		a) Standard Input   (DataStream)
+		b) Command Line Arguments
+
+	2 ways to get data out
+		a) Standard Output  (DataStream)
+		b) Standard Error   (DataStream)
+
+
+
+2) IMP  DataStream can be re-directed from their default location
+  to wherever you wish...this is a process called Redirection
+
+  Standard Output and Standard Error leads to the terminal
+  Standard Input is connected to the Keyboard
+
+
+3) We can Redirect the Standard Output of one Command
+   to Standard Input of another
+   This process is called Piping
+
+
+CommandLine args can not be Redirected
+since CommandLine args are associated with a particular command or a option
+eg cal  -A 1 12 2017
+here -A ...is the After option and 1 is the commandline arg associated with it
+

@@ -1,0 +1,81 @@
+1) Create a File
+    use the touch command
+    eg: touch fileName
+    file can even be created in another directory
+
+2) Create a File with some content
+    use echo command
+    eg: echo "hello" > hello.txt
+
+
+3) Create a Directory(Folder)
+    use the mkdir command
+    eg : mkdir folderName
+    Folder can even be created in another directory
+
+    IMP If you want to create a Folder inside folder use the p option
+    eg : mkdir  -p bla/thing/sdhfja
+        this will create the entire path
+
+
+4) Creating Directories in Bulk..  this is called brace expansion
+    mkdir {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}
+
+5)Creating files in Bulk
+    touch {jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec}_{2017..2022}/file{1..100}
+    touch file{A,B,C}.txt
+
+
+6)Delete a file
+    rm fileName     .. if in the same directory
+    rm pathName     ....if inside other directory
+
+7)Delete a folder
+    rm -r folderName/       .....(Be careful) r commands stands for recursively delete everything inside it
+    rm -ri folderName       ... i stands for interactive ...use it just to safe delete
+
+    rmdir  folderName/*     ...it will only delete the folders which are empty....so SAFEST to use
+                               ... however * is necessary to be mentioned
+
+
+8)Copy a File
+    cp source.txt  destination.txt
+    cp  source1.txt source2.txt  destinationFolder/     ..last thing that comes is the destination
+                                                        ..everything else is the source
+
+    cp -r copy_me/  destination/        ...copies the entire copy_me folder into the destination folder
+                                         .. it's bcoz we are using the -r command
+
+
+9)Rename a File or a Folder
+    mv oldName.txt  newName.txt
+    mv  oldFolder/  newFolder
+
+10) For Moving Files
+    mv  originalFolder/*  .       (move everything from originalFolder to pwd)
+
+
+11)For editing files
+    nano                    (Gives a text editor)
+
+
+12)For Locating Files
+    locate  *.conf          (locates only the Files that end with the .conf extension)
+                               (sudo updatedb .... before using the locate command)
+                                (locate command doesn't work on Folders)
+
+
+13) Find command
+    find  /etc              (etc is the path mentioned)
+                            (locates the Files as well as the Folders)
+                           (doesn't need a DB to work)
+
+
+
+
+14)Search a File
+    grep  e    hello.txt              (used for regex match...find the letter e)
+
+    grep -v e   hello.txt               (find lines that don't have e in them)
+
+    grep -cv    e hello.txt             (to count the lines as well)

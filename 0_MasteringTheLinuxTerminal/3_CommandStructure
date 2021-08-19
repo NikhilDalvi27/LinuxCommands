@@ -1,4 +1,6 @@
-	-All commands are some computer programs that are installed on the computer
+	-All commands are some computer programs that are installed on the computer on a specific path
+	eg usr/bin
+	the pathname can be found out using  "which" command
 
 	1)Command or (ProgramName) that you have to use 
 	  is always the first part of the command
@@ -20,7 +22,8 @@
 
        	   date
        	   date -u
-       	   date --universal	(Same as above)
+       	   date --universal	(Same as above,just have to proceed with --)
+                             (some options don't have long forms...only short form)
 
        	   NOTE:- Long Names are proceeded by 2 dashes 
        	    	  and Usually follow Pascal Case(Seperated by dash)
@@ -37,6 +40,8 @@
      
        -> COMMANDNAME  -OPTIONS=INPUTS
 
+
+    3)Some Commands are not listed using man ....for those commands use cd
 
 
     3)To print the path in which the commands lies, this is just to ensure if the 

@@ -1,0 +1,15 @@
+Command line based program used to schedule task
+
+
+Crontab ...it's basically a text file
+
+Each Crontab has a list of command which would be run automatically
+along with the time when the scripts are scheduled to be run
+
+
+Command
+crontab -e
+
+
+m               h       dom         mon         dow         command
+0,15,30,45                                                  specify bash script here
